@@ -17,6 +17,13 @@ PRODUCT_COPY_FILES += \
     device/samsung/kyleprods/rootdir/init.log.rc:root/init.log.rc \
     device/samsung/kyleprods/rootdir/ueventd.hawaii_ss_kyleprods.rc:root/ueventd.hawaii_ss_kyleprods.rc
 
+# Kernel
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+LOCAL_KERNEL := device/samsung/kyleprods/kernel
+else
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
 # Google's Software Decoder.
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
