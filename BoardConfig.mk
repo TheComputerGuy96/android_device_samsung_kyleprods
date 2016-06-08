@@ -32,7 +32,7 @@ ifeq ($(BUILD_TWRP),true)
     TARGET_KERNEL_CONFIG                    := bcm21664_hawaii_ss_kyleproxx_rev00_recovery_defconfig
 else
     TARGET_KERNEL_CONFIG                    := bcm21664_hawaii_ss_kyleprods_rev00_cyanogenmod_defconfig
-#endif
+endif
 TARGET_KERNEL_SOURCE                        := kernel/samsung/kyleproxx
 TARGET_KERNEL_CUSTOM_TOOLCHAIN              := arm-eabi-4.6
 
