@@ -28,6 +28,9 @@ PRODUCT_COPY_FILES += \
 # Configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml
+
+# FFMPEG CONFIG
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml
 
 # Insecure ADB
