@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/pa_kyleprods.mk
+    device/samsung/kyleprods/pa_kyleprods.mk
