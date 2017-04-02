@@ -17,7 +17,7 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from p2a42 device
+# Inherit device configuration
 $(call inherit-product, device/samsung/kyleprods/device.mk)
 
 # Device identifier. This must come after all inclusions
