@@ -14,11 +14,11 @@
 # limitations under the License.
 #
 
--# Inherit some common CM stuff.
--$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
+# Inherit some common AICP stuff.
+$(call inherit-product, vendor/aicp/config/common_mini_phone.mk)
 
-# Inherit from kyleprods device
-$(call inherit-product, device/samsung/kylepods/device.mk)
+# Inherit device configuration
+$(call inherit-product, device/samsung/kyleprods/device_kyleprods.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := kyleprods
