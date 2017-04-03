@@ -1,3 +1,3 @@
-for i in eng userdebug user; do
-    add_lunch_combo aicp_kyleprods-${i}
-done
+add_lunch_combo aicp_kyleprods-user
+add_lunch_combo aicp_kyleprods-userdebug
+add_lunch_combo aicp_kyleprods-eng

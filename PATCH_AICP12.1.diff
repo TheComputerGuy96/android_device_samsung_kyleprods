@@ -1050,22 +1050,6 @@ diff -ur a/system/core/init/init.cpp b/system/core/init/init.cpp
  
      import_kernel_cmdline(false, [&](const std::string& key, const std::string& value, bool in_qemu) {
          if (key == "androidboot.selinux" && value == "permissive") {
-diff -ur a/system/core/init/service.cpp b/system/core/init/service.cpp
---- a/system/core/init/service.cpp	2017-01-02 17:12:14.000000000 +0000
-+++ b/system/core/init/service.cpp	2017-01-02 18:08:47.532000000 +0000
-@@ -373,9 +373,9 @@
-         }
-         if (rc == 0 && scon == mycon) {
-             ERROR("Service %s does not have a SELinux domain defined.\n", name_.c_str());
--            free(mycon);
--            free(fcon);
--            return false;
-+            //free(mycon);
-+            //free(fcon);
-+            //return false;
-         }
-         free(mycon);
-         free(fcon);
 diff -ur a/system/core/libnetutils/ifc_utils.c b/system/core/libnetutils/ifc_utils.c
 --- a/system/core/libnetutils/ifc_utils.c	2017-01-02 17:12:14.064000000 +0000
 +++ b/system/core/libnetutils/ifc_utils.c	2017-01-02 18:08:47.536000000 +0000
