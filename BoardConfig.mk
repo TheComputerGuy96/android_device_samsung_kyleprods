@@ -46,7 +46,7 @@ TARGET_KERNEL_HAVE_NTFS                     := true
 # Partition size
 BOARD_BOOTIMAGE_PARTITION_SIZE              := 8388608
 # //Fake Values to workaround build
-BOARD_RECOVERYIMAGE_PARTITION_SIZE          := 10279424
+BOARD_RECOVERYIMAGE_PARTITION_SIZE          := 19990000
 # //
 BOARD_SYSTEMIMAGE_PARTITION_SIZE            := 1200283648
 BOARD_SYSTEMIMAGE_JOURNAL_SIZE              := 0
@@ -83,11 +83,6 @@ WIFI_BAND                                   := 802_11_ABG
 
 # LightHAL
 TARGET_PROVIDES_LIBLIGHT                    := true
-
-
-# Resolution
-TARGET_SCREEN_HEIGHT                        := 800
-TARGET_SCREEN_WIDTH                         := 480
 
 # Hardware rendering
 BOARD_EGL_WORKAROUND_BUG_10194508           := true
